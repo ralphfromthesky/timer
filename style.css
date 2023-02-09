@@ -12,6 +12,12 @@ body{
 }
 #container{
    color: #fff;
+   border: 2px solid black;
+   padding: 5rem;
+   border-radius: 50px;
+    background: #fffdfd;
+    box-shadow:  20px 20px 20px #2e2e2e,
+             -20px -20px 20px #ffffff;
 }
 #time {
     font-family: Verdana, Geneva, Tahoma, sans-serif;

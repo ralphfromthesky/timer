@@ -15,9 +15,9 @@ function start() {
   timer = true;
   stopWatch();
   const button = document.getElementById("stop");
-  if (timer) {
-    button.innerHTML = "Stop";
-  }
+  // if (timer) {
+  //   button.innerHTML = "Stop";
+  // }
 }
 
 function stop() {
@@ -29,9 +29,11 @@ function buttonChange() {
   if (timer == false) {
     button.innerHTML = "Stop";
   } else if (timer == true) {
-    button.innerHTML = "Stop";
+    button.innerHTML = "Pause";
+  } else if (timer = false){
+    button.innerHTML = "Pause";
   } else {
-    timer = false;
+    timer;
   }
 }
 
