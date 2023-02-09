@@ -41,6 +41,12 @@ body{
     border: 0px;
     border-radius: 5px;
 }
+.logs {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 10px;
+    color: black;
+}
 #start{
     background-color: #0af558;
 }
@@ -49,4 +55,7 @@ body{
 }
 #reset{
     background-color: #080808;
+}
+#log {
+    background-color: rgb(1, 26, 252);
 }

@@ -3,6 +3,11 @@ let min = 0;
 let sec = 0;
 let count = 0;
 let timer = false;
+const button = document.getElementById("stop");
+const hour = document.getElementById("hr");
+const minute = document.getElementById("min");
+const seconds = document.getElementById("sec");
+const counts = document.getElementById("count");
 
 function start() {
   timer = true;
@@ -19,10 +24,9 @@ function stop() {
 }
 
 function buttonChange() {
-  const button = document.getElementById("stop");
   if (timer == false) {
     button.innerHTML = "pause";
-  } else if (timer == true){
+  } else if (timer == true) {
     button.innerHTML = "stop";
   } else {
     timer = false;
@@ -39,6 +43,11 @@ function reset() {
   document.getElementById("min").innerHTML = "00";
   document.getElementById("sec").innerHTML = "00";
   document.getElementById("count").innerHTML = "00";
+  if (timer == false) {
+    button.innerHTML = "stop";
+  } else {
+    timer == true;
+  }
 }
 
 function stopWatch() {
@@ -77,5 +86,24 @@ function stopWatch() {
     document.getElementById("min").innerHTML = minStr;
     document.getElementById("hr").innerHTML = hrStr;
     setTimeout("stopWatch()", 10);
+    console.log();
   }
+}
+
+function timeLog() {
+  let count = [];
+  let sec = [];
+  let min = [];
+  let hr = [];
+  let history = [];
+  count = document.getElementById("count").innerHTML;
+  sec = document.getElementById("sec").innerHTML;
+  min = document.getElementById("min").innerHTML;
+  hr = document.getElementById("hr").innerHTML;
+  console.log(`${hr}. ${min}. ${sec}. ${count}`);
+ 
+//   count. += `<div class="logs">
+//   <h1 style="text-align: center;">${count}</h1>
+// </div>`;
+  
 }
